@@ -1,6 +1,6 @@
 package streams;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SumEvens {
     private static final IntPredicate EVENS = n -> n % 2 == 0;
@@ -28,18 +28,10 @@ public class SumEvens {
 
     @Test
     public void addEvenElementsUsingStreams() {
-        int sum = IntStream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
-                .filter(EVENS)
-                .sum();
-        assertEquals(12, sum);
     }
 
     @Test
     public void addOddElementsUsingStreams() {
-        int sum = IntStream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
-                .filter(ODDS)
-                .sum();
-        assertEquals(24, sum);
     }
 
 }

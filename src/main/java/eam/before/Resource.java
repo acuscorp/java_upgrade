@@ -14,7 +14,7 @@ public class Resource {
     }
 
     @SuppressWarnings("deprecation")
-    public void finalize() {
+    protected void finalize() {
         System.out.println("do any cleanup here...");
     }
 

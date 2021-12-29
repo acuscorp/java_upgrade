@@ -1,6 +1,6 @@
 package lambdas;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,7 +11,7 @@ public class BinaryOperatorTest {
     @Test
     public void concatAsBinaryOperator() {
         BinaryOperator<String> concat = String::concat;
-        concat = (s, str) -> s.concat(str);
+        // concat = (s, str) -> s.concat(str);
 
         List<String> strings = Arrays.asList("this", "is", "a", "list", "of", "strings");
         Optional<String> str = strings.stream()

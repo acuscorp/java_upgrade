@@ -1,10 +1,6 @@
 package interfaces;
 
-import org.junit.Test;
-
-import java.util.Comparator;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
 // Create a class called CompanyEmployee that implements both
 //   the Company and Employee interfaces
@@ -12,10 +8,10 @@ import static org.junit.Assert.*;
 // Give the class a two-arg constructor that takes first and last name
 // Implement the getName method so that the test below passes
 public class CompanyEmployeeTest {
-    private CompanyEmployee emp = new CompanyEmployee("Peter", "Gibbons");
 
     @Test
     public void getName() {
-        assertEquals("Peter Gibbons works for Initech", emp.getName());
+//        CompanyEmployee emp = new CompanyEmployee("Peter", "Gibbons");
+//        assertEquals("Peter Gibbons works for Initech", emp.getName());
     }
 }
